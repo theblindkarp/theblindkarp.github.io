@@ -1,38 +1,121 @@
- <!DOCTYPE html>
+<!Doctype HTML>
+<html lang = "en-us">
+    <head>
+        <title>TheBlindKarp.com</title>
+        <meta charset="utf-8">
+        <style type = "text/css">
+        body{
+            font-family: "Courier New", monospace;
+            background-image: url("space.jpg");
+            background-size: 100%;
+        }
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>nicksstuff</title>
-    <link rel="icon" type="image/x-icon" href="/images/Tunda_Logo.png" />
-<style>
-table, th, td {
-  border:1px solid black;
-  border-collapse: collapse;
-}
-</style>
-</head>
-<body>
-<p><a href="https://app.milanote.com/1OGgUw1z3zjSdh?p=Kf7mPAtfZ3w">Do your tasks. not amogus</a> <-- this is for nick</p>
-<p><a href="https://theseeingkarp.crevado.com/">Photoshop projects</a></p>
-<p><a href="/cookbook.html">Cookbook for recipes and stuff u know.</a></p>
-<hr>
-<h2 title="sorry mac users">Python Projects  <sup>**windows only for EXE</sup></h2>
-<p><span style="background-color:yellow;"><b>**Windows automatically safeguards you from downlowding EXE files. Bypass both safe guards to play. If you do not trust this process, use the Web Version.</b></span></p>
-<p><a href="https://github.com/theblindkarp/code-exe-projects/raw/main/highlowSNNBlackBelt.exe">Play my High Low game!</a></p>
-<p><a href = "https://github.com/theblindkarp/code-exe-projects/raw/main/knockKnockNickNorman.exe">Knock knock joke project</a></p>
-<p><a href="https://github.com/theblindkarp/code-exe-projects/raw/main/changemakerblackbeltNPN.exe">Change Maker Calculator</a></p>
-<p><a href="https://github.com/theblindkarp/code-exe-projects/raw/main/twelve-days-of-christmas-calc.exe">Calculate presents (12 Days of Xmas)</a></p>
-<p><a href="https://github.com/theblindkarp/code-exe-projects/raw/main/comment-extractor.exe">Comment Extractor from scripts</a></p>
-<p>Love Tester: <a href="https://github.com/theblindkarp/code-exe-projects/raw/main/love.exe">EXE dowload</a> <a target="_blank" href="/pythonProjects.html#love-tester">Web Version</a></p>
-<p>Height Calculator in # Units: <a target="_blank" href="/heightcalc.html">Web Version</a>
+        #header{
+            color: white;
+            margin: auto;
+            text-align: center;
+        }
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<p style="font-size:12px;"><a target="_blank" href="https://github.com/theblindkarp/code-exe-projects">github</a>
-<br>
-Nicholas P. Norman Nov 2022
-</p>
+        #columns{
+            background-color: #FFFFFFBB;
+            height: 85vh;
+            display: grid;
+            grid-template-columns: 200px 3fr 200px;
+        }
 
+        .main{
+            grid-column: 2/3;
+            margin: 1em 5%;
+        }
 
-</body>
+        .ad{
+            background-color: #CCFFEE99;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        .warning{
+            background-color: yellow;
+            font-weight: bold;
+            font-size: 12px
+        }
+
+        .border{
+            padding: 1em;
+            border-style: solid;
+            margin: 1% 0;
+        }
+
+        li{
+            margin: .5em 0;
+        }
+
+        @media (max-width: 600px){
+        /* alternate format for smaller screens */
+            #columns{
+                height: 85vh;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 100px;
+            }
+            .main{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                margin: 1em 5%;
+        }
+        }
+        </style>
+    </head>
+    <body>
+
+    <div id = "header">
+        <h1>TheBlindKarp • com<h1>
+    </div>
+
+    <div id = "columns">
+        <div class = ad>
+            <p>remove</p>
+            <img src = "space.jpg" alt = "jwst image" title = "ad ig"/>
+        </div>
+
+        <div class = "main">
+            <div id = "about-me" class = "border">
+                <h2>About Me</h2>
+                <p>I'm Nick, also known as TheBlindKarp, or TBK</p>
+            </div>
+
+            <div id = "quick-links" class = "border">
+                <h2>Quick Links</h2>
+                <p>
+                <a href="https://app.milanote.com/1OGgUw1z3zjSdh?p=Kf7mPAtfZ3w">Do your tasks. not amogus</a> <-- this is for nick<br/>
+                <a href="https://theseeingkarp.crevado.com/">Photoshop projects</a><br/>
+                <a href="/cookbook.html">Cookbook for recipes and stuff u know.</a>
+                </p>
+            </div>
+
+            <div id = "python" class = "border">
+                <h2>Python Projects**</h2>
+                <p>
+                    <span class = "warning">**Windows automatically safeguards you from downlowding EXE files. Bypass both safe guards to play. If you do not trust this process, use the Web Version.</span>
+                </p>
+                <ol>
+                    <li><a href="https://github.com/theblindkarp/code-exe-projects/raw/main/highlowSNNBlackBelt.exe">Play my High Low game!</a></li>
+                    <li><a href = "https://github.com/theblindkarp/code-exe-projects/raw/main/knockKnockNickNorman.exe">Knock knock joke project</a></li>
+                    <li><a href="https://github.com/theblindkarp/code-exe-projects/raw/main/changemakerblackbeltNPN.exe">Change Maker Calculator</a></li>
+                    <li><a href="https://github.com/theblindkarp/code-exe-projects/raw/main/twelve-days-of-christmas-calc.exe">Calculate presents (12 Days of Xmas)</a></li>
+                    <li><a href="https://github.com/theblindkarp/code-exe-projects/raw/main/comment-extractor.exe">Comment Extractor from scripts</a></li>
+                    <li>Love Tester: <a href="https://github.com/theblindkarp/code-exe-projects/raw/main/love.exe">EXE dowload</a> <a target="_blank" href="/pythonProjects.html#love-tester">Web Version</a></li>
+                    <li>Height Calculator in # Units: <a target="_blank" href="/heightcalc.html">Web Version</a>
+                </ol>
+            </div>
+        </div>
+
+        <div class = "ad">
+            <p>remove</p>
+        </div>
+    </div>
+
+    </body>
 </html>
