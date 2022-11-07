@@ -34,6 +34,22 @@
 
         img{
             width: 100%;
+            height: 80%
+        }
+
+        #nick-face{
+            width: 5em;
+            height: 5em;
+            margin: 0 0 0 50%;
+        }
+
+        #about-me-label{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        #am-title{
+            margin: auto 0 auto 0;
         }
 
         .warning{
@@ -76,14 +92,16 @@
 
     <div id = "columns">
         <div class = ad>
-            <p>remove</p>
-            <img src = "space.jpg" alt = "jwst image" title = "ad ig"/>
+            <img src = "ad.png" alt = "theblindkarp ad" title = "I LUV THIS SITE"/>
         </div>
 
         <div class = "main">
             <div id = "about-me" class = "border">
-                <h2>About Me</h2>
-                <p>I'm Nick, also known as TheBlindKarp, or TBK</p>
+                <div id = about-me-label>
+                    <h2 id = "am-title">About Me</h2>
+                    <p><img id = "nick-face" src = "NickFace.png" alt = "Nicholas Norman TheBlindKarp" title = "This is me!"></p>
+                </div>
+                <p>I'm Nick, also known as TheBlindKarp, or TBK.</p>
             </div>
 
             <div id = "quick-links" class = "border">
@@ -111,9 +129,9 @@
                 </ol>
             </div>
         </div>
-
+        
         <div class = "ad">
-            <p>remove</p>
+            <img src = "ad.png" alt = "theblindkarp ad" title = "I LUV THIS SITE"/>
         </div>
     </div>
 
