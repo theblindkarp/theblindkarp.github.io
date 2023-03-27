@@ -1,0 +1,89 @@
+:root {
+--background: lightblue;
+--link-bg-color: #4b4b4b;
+--link-bg-color-hover: #9b9b9b;
+--nav-bg-color: #2c2c2c;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+.nav-link {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-weight: normal;
+    font-size: 1.3rem;
+    background-color: var(--link-bg-color);
+    border-left: solid  var(--link-bg-color-hover) 5px;
+}
+
+.nav-link:hover {
+    color: black;
+    background-color: var(--link-bg-color-hover);
+    border-left-color: var(--link-bg-color);
+}
+
+.container {
+    margin: auto;
+    margin-top: 1.5em;
+    width: 55%;
+    background-color: var(--background);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 1.5rem;
+}
+
+.main {
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+.left-nav {
+    overflow-x: auto;
+    background-color: var(--nav-bg-color);
+}
+
+.header {
+    text-align: center;
+    padding: 5px;
+}
+
+.mission-statement {
+    text-decoration: underline;
+}
+
+.quote {
+    font-style: italic;
+}
