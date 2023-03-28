@@ -53,9 +53,9 @@ a:hover {
     margin: auto;
     margin-top: 1.5em;
     width: 55%;
-    background-color: var(--background);
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: var(--background);
 }
 
 .header-img {
@@ -91,4 +91,14 @@ a:hover {
 
 .quote {
     font-style: italic;
+}
+
+.category {
+    border-left: 0;
+}
+
+.category:hover {
+    background-color: var(--link-bg-color);
+    color: white;
+    cursor: default;
 }
