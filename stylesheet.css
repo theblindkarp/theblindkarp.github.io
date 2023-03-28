@@ -38,6 +38,11 @@ a:hover {
     border-left: solid  var(--link-bg-color-hover) 5px;
 }
 
+.sub {
+    font-size: 0.90rem;
+    margin-bottom: 0rem;
+}
+
 .nav-link:hover {
     color: black;
     background-color: var(--link-bg-color-hover);
