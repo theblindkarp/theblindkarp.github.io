@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+<title>Budget</title>
+<meta name="description" content="Our first page">
+<meta name="keywords" content="html tutorial template">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<header>
+    <div class="title">
+        <h1>10 Easy and Cheap Dorm Meals @ IUPUI</h1>
+    </div>
+    <div class="nav-bar">
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/introduction.html" class="nav-link">Introduction</a>
+        <a href="" class="nav-link">Dorm Kitchen Tips</a>
+        <a href="/about.html" class="nav-link">About / The Mission</a>
+        <a href="/sources.html" class="nav-link">Sources</a>
+    </div>
+</header>
+<hr class="line">
+<main>
+    <div class="intro">
+        <h2>Welcome to DormMeals.net</h2>
+        <p>Go thru this website and look at cheap and easy meals to make inside of your dorm! These guidlines follow IUPUI dorm standards</p>
+    </div>
+    <div class="main">
+        <div class="recipes">
+            <button class="recipe-item">
+                <img name="breakfast" class="recipe-img" src="https://www.pcrm.org/sites/default/files/2022-05/Universal-Meals-Recipes-Collage.jpg">
+                <p>Breakfast Recipe</p>
+                <p>Ingredients: 5</p>
+                <p>Approx Time: 20min</p>
+            </button>
+            <button class="recipe-item">
+                <img name="breakfast" class="recipe-img" src="https://www.pcrm.org/sites/default/files/2022-05/Universal-Meals-Recipes-Collage.jpg">
+                <p>Breakfast Recipe</p>
+                <p>Ingredients: 5</p>
+                <p>Approx Time: 20min</p>
+            </button>
+            <button class="recipe-item">
+                <img name="lunch" class="recipe-img" src="https://www.pcrm.org/sites/default/files/2022-05/Universal-Meals-Recipes-Collage.jpg">
+                <p>Lunch Recipe</p>
+                <p>Ingredients: 5</p>
+                <p>Approx Time: 20min</p>
+            </button>
+            <button class="recipe-item">
+                <img name="lunch" class="recipe-img" src="https://www.pcrm.org/sites/default/files/2022-05/Universal-Meals-Recipes-Collage.jpg">
+                <p>Lunch Recipe</p>
+                <p>Ingredients: 5</p>
+                <p>Approx Time: 20min</p>
+            </button>
+            <button class="recipe-item">
+                <img name="lunch" class="recipe-img" src="https://www.pcrm.org/sites/default/files/2022-05/Universal-Meals-Recipes-Collage.jpg">
+                <p>Lunch Recipe</p>
+                <p>Ingredients: 5</p>
+                <p>Approx Time: 20min</p>
+            </button>
+            <button class="recipe-item">
+                <img name="dinner" class="recipe-img" src="https://www.pcrm.org/sites/default/files/2022-05/Universal-Meals-Recipes-Collage.jpg">
+                <p>Dinner Recipe</p>
+                <p>Ingredients: 5</p>
+                <p>Approx Time: 20min</p>
+            </button>
+            <button class="recipe-item">
+                <img name="dinner" class="recipe-img" src="https://www.pcrm.org/sites/default/files/2022-05/Universal-Meals-Recipes-Collage.jpg">
+                <p>Dinner Recipe</p>
+                <p>Ingredients: 5</p>
+                <p>Approx Time: 20min</p>
+            </button>
+            <button class="recipe-item">
+                <img name="dinner" class="recipe-img" src="https://www.pcrm.org/sites/default/files/2022-05/Universal-Meals-Recipes-Collage.jpg">
+                <p>Dinner Recipe</p>
+                <p>Ingredients: 5</p>
+                <p>Approx Time: 20min</p>
+            </button>
+            <button class="recipe-item">
+                <img name="dinner" class="recipe-img" src="https://www.pcrm.org/sites/default/files/2022-05/Universal-Meals-Recipes-Collage.jpg">
+                <p>Dinner Recipe</p>
+                <p>Ingredients: 5</p>
+                <p>Approx Time: 20min</p>
+            </button>
+            <button class="recipe-item">
+                <img name="dinner" class="recipe-img" src="https://www.pcrm.org/sites/default/files/2022-05/Universal-Meals-Recipes-Collage.jpg">
+                <p>Dinner Recipe</p>
+                <p>Ingredients: 5</p>
+                <p>Approx Time: 20min</p>
+            </button>
+        </div>
+        <div class="left-nav">
+            <img src="./dormmeals.png" class="image">
+            <p>Search by Category</p>
+            <select class="dropdown" id="category" onchange="category()">
+                <option value="" selected>
+                    Select Option
+                </option>
+                <option class="option" value="breakfast">
+                    Breakfast
+                </option>
+                <option class="option" value="lunch">
+                    Lunch
+                </option>
+                <option class="option" value="dinner">
+                    Dinner
+                </option>
+            </select>
+            <div class="advert">
+                <p>
+                    This website was made possible by:
+                    NPNORMAN Web Design LLC.
+                    Visit <a target="_blank" href="http://www.npnorman.com">www.npnorman.com</a> to find more!
+                </p>
+            </div>
+            <h3>Quick Kitchen Tips!</h3>
+            <ol>
+                <li>
+                    Don't have Access to a microwave? Use an on-campus microwave!
+                </li>
+                <li>
+                    Want to use a toaster... use a microwave on medium heat.
+                </li>
+                <li>
+                    Want to read more? Visit <span style="font-weight: bold">Dorm Kitchen Tips</span> on the navigation bar!
+                </li>
+            </ol>
+        </div>
+    </div>
+</main>
+<footer>
+    Brought to you by NPNORMAN Web Design LLC © 2023
+</footer>
+</div>
+
+<script>
+    function category() {
+        var category = document.getElementById("category").value;
+        var images = document.getElementsByClassName("recipe-img");
+        for (var i = 0, max = images.length; i < max; i++) {
+            if (images[i].name == category) {
+                images[i].style.opacity = "1";
+            } else if (category == "") {
+                images[i].style.opacity = "1";
+            } else {
+                images[i].style.opacity = "0.2";
+            }
+            
+        }
+    }
+</script>
+
+</body>
+</html>
